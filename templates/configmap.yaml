@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  config.yaml: |
+    apiVersion: v1
+    kind: Config
+    metadata:
+      name: config
+    data:
+      password: "hardcoded-password"  # Hardcoded password
